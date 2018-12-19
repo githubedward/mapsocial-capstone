@@ -1,0 +1,787 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Yellowtail');
+
+// variables 
+$iconhover: #d7f1c5;
+$iconhoverdark: #819672;
+
+$h1: 24 / 16 + rem;
+$h2: 18 / 16 + rem;
+$h3: 16 / 16 + rem;
+$h4: 14 / 16 + rem;
+$h5: 13 / 16 + rem;
+$form-help-txt: 12 / 16 + rem;
+$thumbnail-hover: 10 / 16 + rem;
+
+// weights
+$font-light: 300;
+$font-normal: 400;
+$font-medium: 500;
+$font-bold: 700;
+
+$nav-width: 4.40rem;
+// colors
+$lightred: rgb(231, 82, 82);
+$red: rgb(255, 49, 49);
+$super-darkgray: #313131;
+$darkgray: #888888;
+$gray: #D4D4D4;
+$lightgray: #F1F1F1;
+$extralightgray: #F8F8F8;
+$lightgreen: rgb(95, 196, 95);
+
+$header-color: $super-darkgray;
+$header-fontsize: 2.0rem;
+// $offwhite: rgb(241, 241, 238);
+
+// mixins
+@mixin header-text {
+    font-family: 'Yellowtail', cursive;
+    font-weight: $font-medium;
+    font-size: $header-fontsize;
+}
+@mixin pointer {
+    cursor: pointer;
+}
+@mixin navhover {
+    &:hover {
+        // background-color: $iconhover;
+        color: $lightred;
+        border: 1px solid $lightred;
+        // border-radius: 50%;
+    }
+}
+@mixin buttonhover($color, $bgcolor, $bordercolor) {
+    &:hover {
+        color: $color;
+        background-color: $bgcolor;
+        border: 1px solid $bordercolor;
+    }
+}
+@mixin button ($width, $height, $bgcolor, $bordercolor, $textcolor, $bradius, $font-size) {
+    width: $width;
+    height: $height;
+    background-color: $bgcolor;
+    border: $bordercolor 1px solid;
+    color: $textcolor;
+    border-radius: $bradius;
+    font-size: $font-size;
+}
+@mixin mini-button ($color, $bgcolor, $bordercolor, $width) {
+    border: 1px solid $bordercolor;
+    background-color: $bgcolor;
+    width: $width;
+    font-size: $h5;
+    color: $color;
+    border-radius: 2px;
+}
+@mixin profile-avatar($height, $width) {
+    height: $height / 16 + rem;
+    width: $width / 16 + rem;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    border: 1px solid $darkgray;
+    // margin: 1rem;
+}
+@mixin rbox-shadow {
+    box-shadow: 1px 0px 5px 1px rgba(187, 187, 187, 0.432);
+}
+@mixin allbox-shadow {
+    box-shadow: 0px 0px 5px 1px rgba(209, 209, 209, 0.15);
+}
+@mixin allbox-shadow-dark {
+    box-shadow: 0px 0px 5px 1px rgba(177, 177, 177, 0.623);
+}
+@mixin slide-in($from, $to, $timing, $transition) {
+    @keyframes slidein {
+        from {
+        // margin-left: $nav-width;
+        transform: translateX($from);
+        }
+      
+        to {
+        // margin-right: $nav-width;
+        transform: translateX($to);
+        }
+    } 
+
+    animation: slidein $timing $transition;
+}
+@mixin color-change-animation($duration, $from, $to) {
+    animation: color-change $duration ease-in;
+    
+    @keyframes color-change {
+        from {background-color: $from}
+        to {background-color: $to}
+    }
+}
+
+// Global rulesets
+* {
+    margin: 0;
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+button, i {
+    @include pointer();
+    &:focus {
+        outline: none;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+// Components
+.App {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    
+}
+
+nav {
+    height: 100vh;
+    width: $nav-width;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @include rbox-shadow();
+    z-index: 100;
+
+    position: fixed;
+    background: white;
+
+    .top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &-avatar {
+            @include profile-avatar(40, 40);
+            margin: 1rem;
+            &:hover {
+                color: $lightred;
+                border: 2px solid $lightred;
+            }
+        }
+
+        i {
+            color: $darkgray;
+            padding: .5rem;
+            margin: 1rem;
+            border-radius: 50%;
+            border: 1px solid $darkgray;
+            @include navhover;
+        }
+
+        .active {
+            border: 1px solid $lightred;
+            color: $lightred;
+        }
+    }
+    .bottom {
+        display: flex;
+        flex-direction: column;
+        color: rgb(175, 175, 175);
+        i:nth-child(1) {
+            margin: 1rem 0;
+        }
+        i:nth-child(2) {
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+.map {
+    width: 100%;
+    height: 100vh;
+    .logo {
+        display: flex;
+        align-items: center;
+        position: fixed;
+        bottom: .5rem;
+        left: 4.75rem;
+        color: $lightred;
+        i {
+            font-size: 1rem;
+        }
+        h1 {
+            font-size: 1rem;
+        }
+    text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.747);
+    }
+    .tools {
+        position: fixed;
+        top: 0;
+        right: 47%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        i { 
+            color: $gray;
+            padding: 0 .5rem 0 .5rem;
+            &:hover {
+                background-color: #31313130;
+                color: white;
+            }
+        }
+        .active {
+            visibility: visible;
+        }
+        .inactive {
+            visibility: hidden;
+        }
+        .map-active {
+            display: block;
+        }
+        .map-inactive {
+            display: none;
+        }
+        
+        &-list {
+            @include allbox-shadow();
+            background-color: rgba(212, 212, 212, 0.50);
+            font-size: $form-help-txt;
+            font-weight: $font-light;
+            border-radius: 2px;
+            // div:nth-child(1) {
+            //     border-bottom: 1px solid $darkgray+70;
+            // }
+            div {
+                border-bottom: 1px solid $darkgray+70;
+                @include pointer();
+                padding: .5rem;
+                &:hover {
+                    background-color: white;
+                    border-radius: 2px;
+                }
+            }
+            .map-styles {
+                border-bottom: 1px solid $darkgray+70;
+                background-color: rgba(34, 34, 34, 0.164)
+            }
+        }
+        
+    }
+}
+
+.search {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 1rem;
+    right: 1rem;
+    
+    &-input {
+        font-size: $h4;
+        padding: .5rem;
+        border: 1px solid $extralightgray;
+        @include allbox-shadow-dark();
+        width: 15rem;
+        &:focus {
+            outline: none;
+        }
+    }
+    &-button {
+        position: absolute;
+        right: .25rem;
+        border-radius: 25%;
+        height: 80%;
+        background-color: white;
+        border: none;
+        i {
+            background-color: none;
+            border: none;
+            color: $lightred;
+            &:hover {
+                color: $iconhoverdark;
+                @include pointer;
+            }
+        }
+    }
+}
+
+.content-form {
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    color: $super-darkgray;
+    margin: 1rem 0.25rem 1rem 1.5rem;
+
+    h2 {
+        margin-bottom: .5rem;
+        color: $lightred;
+    }
+    h3 {
+        font-weight: $font-medium;
+        color: $super-darkgray;
+        margin-bottom: .5rem;
+    }
+    &__date {
+        display: flex;
+        align-items: center;
+        margin-bottom: 1.5rem;
+        input {
+            margin-left: .5rem;
+            font-family: inherit;
+            color: $darkgray;
+            font-weight: $font-light;
+            padding: .15rem;
+            border: 1px solid $gray;
+            border-radius: 2px;
+        }
+    }
+    &__post {
+        display: flex;
+        textarea {
+            width: 100%;
+            font-family: inherit;
+            font-size: $h5;
+            font-weight: 300;
+            resize: none;
+            height: 12rem;
+            border: $gray 1px solid;
+            border-radius: 2px;
+            padding: .25rem;
+            // color: $super-darkgray;
+        }
+        margin-bottom: 1.5rem;
+    }
+    &__buttons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &-left {
+            i {
+                margin-right: .25rem;
+                color: $darkgray;
+                border: 1px solid $lightgray;
+                border-radius: 5px;
+                @include buttonhover($lightred, '', '')
+            }
+            .file {
+                font-size: $h1;
+            }
+        }
+        
+        button, input {
+            align-self: flex-end;
+            // $width, $height, $bgcolor, $bordercolor, $textcolor, $bradius, $font-size
+            @include button (120 / 16 + rem, 30 / 16 + rem, $lightred, $lightred, #ffffff, 2px, $h4);
+            @include buttonhover(white, $red , $red);
+            @include pointer;
+        }
+    }
+}
+
+.toggle-container {
+    @include slide-in(-100%, 0%, 250ms, ease-out);
+    // transition: transform 400ms ease-in;
+    position: absolute;
+    left: $nav-width;
+    // margin-left: .2rem;
+    width: 22.5rem;
+    height: 100vh;
+    background-color: white;
+    // background-color: $extralightgray;
+    overflow: scroll;
+    padding: .5rem;
+    z-index: 99;
+    @include rbox-shadow();
+}
+
+.feed {
+    display: flex;
+    flex-direction: column; 
+    background-color: white;
+
+    &-header {
+        color: $header-color;
+        width: 100%;
+        
+        &__title {
+            @include allbox-shadow();
+            
+            padding: .5rem 0;
+            text-align: center;
+            h1 {
+                @include header-text();
+                
+            }
+            // color: $lightred;
+            // background-color: $lightgray;
+        }
+        &__filter {
+            padding: .5rem;
+            text-align: center;
+            display: flex;
+            justify-content: space-around;
+            a {
+                padding: 0 .5rem;
+                text-decoration: none;
+                color: $darkgray;
+                font-size: $h4;
+                .active  {
+                    text-decoration: underline;
+                    // font-weight: $font-bold;
+                    color: $super-darkgray;
+                }
+                &:hover {
+                    text-decoration: underline;
+                    color: $super-darkgray;
+                }
+            }
+        }
+    }
+
+    &-list {
+        .content {
+            @include color-change-animation(500ms, #d4d4d4, none);
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: .5rem;
+            padding: 1rem;
+            border-radius: 2px;
+            @include allbox-shadow();
+            
+            %margin {
+                margin: .5rem 0;
+            }
+    
+            &-info {
+                color: $super-darkgray;
+                display: flex;
+                align-items: center;
+                @extend %margin;
+    
+                &__avatar {
+                    img {
+                        @include profile-avatar(40, 40);
+                    }
+                }
+                &__details {
+                    margin-left: .75rem;
+                    h4 {
+                        font-weight: $font-medium;
+                    }
+                    p {
+                        font-size: $form-help-txt;
+                        font-weight: $font-light;
+                        color: $darkgray;
+                    }
+                }
+            }
+            
+            &-box {
+                word-wrap: normal;
+                font-size: $h3;
+                font-weight: $font-normal;
+                @extend %margin;
+                h3 {
+                    font-weight: 500;
+                    // color: $darkgray;
+                    color: $lightred;
+                }
+                &__date {
+                    font-size: $form-help-txt;
+                    color: $darkgray;
+                }
+                &__text {
+                    margin-top: 1rem;
+                    font-weight: $font-light;
+                    // border: 1px $gray solid;
+                    // width: 100%;
+                }
+            }
+    
+            &-reaction {
+                // @extend %margin;
+                margin-top: 1rem;
+                display: flex;
+                &__btns {
+                    display: flex;
+                    align-items: center;
+                    margin-right: 1rem;
+                    border-radius: 3px;
+                    border: 1px solid $lightgray;
+                    // background-color: none;
+                    font-size: $h5;
+                    font-weight: $font-normal;
+                    color: $darkgray;
+                    i {
+                        font-size: $h5;
+                        margin-right: .25rem;
+                        // color: $lightred;
+                    }
+                    &:hover {
+                        color: $lightred;
+                        border-color: $lightred;
+                    }
+                }
+            }
+    
+        }
+    }
+}
+
+.community {
+    background-color: white;
+    &-header {
+        @include allbox-shadow();
+        padding: .5rem 0;
+        text-align: center;
+        color: $header-color;
+        text-align: center;
+        margin-bottom: .5rem;
+        
+        h1 {
+            @include header-text();
+        }
+    }
+
+    &-list {
+        .following {
+            display: flex;
+            justify-content: space-between;
+            padding: .5rem;
+            @include allbox-shadow();
+            margin-bottom: .5rem;
+            border-radius: 2px;
+    
+            &-left {
+                display: flex;
+                align-items: center;
+                img {
+                    @include profile-avatar(40, 40);
+                }
+                i {
+                    padding: .4rem;
+                    text-align: center;
+                    vertical-align: middle;
+                    height: 40 / 16 + rem;
+                    width: 40 / 16 + rem;
+                    border-radius: 50%;
+                    border: 1px solid $gray;
+                    background-color: $gray;
+                    color: $extralightgray;
+                }
+    
+                &__info {
+                    color: $super-darkgray;
+                    margin-left: .5rem;
+                    h4 {
+                        font-weight: $font-medium;
+                    }
+                    p { 
+                        margin-top: .10rem;
+                        font-weight: $font-light;
+                        font-size: $form-help-txt;
+                    }
+                }
+            }
+            &-right {
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+    
+                button {
+                    margin: .15rem 0;
+                    @include mini-button($darkgray, white, $gray, 5rem);
+                    @include buttonhover($super-darkgray, white, $darkgray);
+                    &:focus {
+                        outline: none;
+                    }
+                }
+                .view-profile {
+                    @include mini-button($extralightgray, $lightred, $lightred, 5rem);
+                    @include buttonhover(white, $red, $red)
+                }
+                .active {
+                    @include mini-button($super-darkgray, $lightgray, $lightred, 5rem);
+                }
+            }
+        }
+    }
+}
+
+.profile {
+    background-color: white;
+
+    %shared {
+        padding: .5rem;
+        @include allbox-shadow();
+        margin-bottom: .5rem;
+        border-radius: 2px;
+        text-align: center;
+        color: $super-darkgray;
+    }
+    h1 {
+        @extend %shared;
+        @include header-text();
+    }
+    &-details {
+        @extend %shared;
+        
+        h3 {
+            font-weight: $font-light;
+            text-align: left;
+            span {
+                font-weight: $font-normal;
+                margin-left: .5rem;
+            }
+        }
+        // color: $super-darkgray;
+    }
+
+}
+
+.new-place, .pinned-place {
+    // text-align: center;
+    display: flex;
+    flex-direction: column;
+    max-width: 8rem;
+    color: $super-darkgray;
+    font-size: $h4;
+    #pinned {
+        color: $lightred;
+        font-weight: $font-bold;
+    }
+    p, h4, button {
+        margin: .10rem 0;
+    }
+    // align-items: center;
+    // padding: 1rem 0 .5rem 1.3rem;
+    button {
+        @include mini-button($extralightgray, $lightred, $lightred, 7rem);
+        @include buttonhover(white, $red, $red);
+    }
+    img {
+        @include profile-avatar(25, 25);
+    }
+    .address-link {
+        color: rgb(30, 128, 255);
+        text-decoration: underline;
+        font-size: $form-help-txt;
+        margin-top: .5rem;
+        @include pointer();
+        &:hover {
+            font-weight: $font-medium;
+        }
+    }
+    .pinned-address {
+        display: none;
+        font-size: $form-help-txt;
+    }
+    .active {
+        display: block;
+    }
+}
+
+.landing-page {
+    video {
+        // opacity: .95;
+        z-index: 101;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        object-position: center;
+    }
+    .welcome {
+        display: none;
+        z-index: 103;
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        // justify-content: center;
+        align-items: center;
+
+        &-modal {
+            @include allbox-shadow();
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, .85);
+            border: 1px solid white;
+            height: 35rem;
+            width: 25rem;
+            margin-left: 3rem;
+            text-align: center;
+            padding: 2rem 2.5rem 2rem 2rem;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .title {
+                padding-right: 1.25rem;
+                display: flex;
+                align-items: center;
+                font-size: 3.5rem;
+                margin-bottom: 1rem;
+                color: $super-darkgray;
+                @include header-text();
+                font-size: 4rem;
+                i {
+                    font-size: 3.5rem;
+                    // margin-right: .5rem;
+                    color: $lightred;
+                }
+            }
+            .tag {
+                color: $super-darkgray;
+                font-size: 1.25rem;
+                font-weight: 400;
+                // font-style: italic;
+            }
+            button {
+                margin-top: 7rem;
+                @include button (225 / 16 + rem, 60 / 16 + rem, $lightred, $lightred, #ffffff, 5px, $h1);
+                @include buttonhover(white, $lightred , white);
+                @include pointer;
+                &:focus {
+                    outline: none;
+                }
+                // &:hover {
+                //     font-weight: $font-bold;
+                // }
+            }
+        }
+    }
+}
+
+.marker-label {
+    width: 50px; 
+    height: 20px;
+
+    border: 1px solid #eb3a44;
+    border-radius: 5px;
+    background: #fee1d7;
+    text-align: center;
+    line-height: 20px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #eb3a44;
+}
+
+.file-input {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
