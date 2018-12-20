@@ -11,4 +11,4 @@
 
 # Project Overview
 Landing page
-![alt text](file:///Users/Edward/Desktop/Screen%20Shot%202018-12-19%20at%209.33.23%20PM.png)
+![alt text](https://drive.google.com/drive/u/0/folders/1-AwPCgmONbopgyClk5N9D84bAo-eY0Bd?ogsrc=32)
