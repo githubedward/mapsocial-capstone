@@ -11,4 +11,4 @@
 
 # Project Overview
 Landing page
-![alt text](https://drive.google.com/drive/u/0/folders/1-AwPCgmONbopgyClk5N9D84bAo-eY0Bd?ogsrc=32)
+https://user-images.githubusercontent.com/41134618/50260784-84a88780-03d7-11e9-982f-88f8884a95cb.png
