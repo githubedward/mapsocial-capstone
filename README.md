@@ -11,4 +11,9 @@
 
 # Project Overview
 Landing page
+
 <img width="1474" alt="screen shot 2018-12-19 at 9 33 23 pm" src="https://user-images.githubusercontent.com/41134618/50260784-84a88780-03d7-11e9-982f-88f8884a95cb.png">
+
+My Map / Places 
+
+<img width="1484" alt="screen shot 2018-12-19 at 9 48 43 pm" src="https://user-images.githubusercontent.com/41134618/50260867-e36e0100-03d7-11e9-92f8-e3e1a016d007.png">
