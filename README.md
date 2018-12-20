@@ -21,8 +21,8 @@ My Map / Places
 Pin a New Place
 
 <img width="1485" alt="screen shot 2018-12-19 at 10 18 46 pm" src="https://user-images.githubusercontent.com/41134618/50262213-026f9180-03de-11e9-94a7-780c216ff7aa.png">
-
-
 <img width="1482" alt="screen shot 2018-12-19 at 10 18 56 pm" src="https://user-images.githubusercontent.com/41134618/50262228-12877100-03de-11e9-9e17-0874c1c0ee8b.png">
+
+Write something about a specific pinned place
 
 <img width="1484" alt="screen shot 2018-12-19 at 10 19 45 pm" src="https://user-images.githubusercontent.com/41134618/50262234-15826180-03de-11e9-8b36-1de3837b8f8c.png">
