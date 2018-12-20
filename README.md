@@ -11,4 +11,4 @@
 
 # Project Overview
 Landing page
-file:///Users/Edward/Desktop/Screen%20Shot%202018-12-19%20at%209.33.23%20PM.png
+![alt text](file:///Users/Edward/Desktop/Screen%20Shot%202018-12-19%20at%209.33.23%20PM.png)
