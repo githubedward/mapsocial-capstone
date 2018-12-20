@@ -11,4 +11,4 @@
 
 # Project Overview
 Landing page
-https://user-images.githubusercontent.com/41134618/50260784-84a88780-03d7-11e9-982f-88f8884a95cb.png
+<img width="1474" alt="screen shot 2018-12-19 at 9 33 23 pm" src="https://user-images.githubusercontent.com/41134618/50260784-84a88780-03d7-11e9-982f-88f8884a95cb.png">
