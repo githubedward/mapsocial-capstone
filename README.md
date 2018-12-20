@@ -34,6 +34,6 @@
 <img width="1482" alt="screen shot 2018-12-19 at 11 09 54 pm" src="https://user-images.githubusercontent.com/41134618/50263356-52048c00-03e3-11e9-81d5-778d5cc6d419.png">
 
 ### Feed 
-Posts shown are connected to what is shown on the map
+- Posts shown are connected to what is shown on the map
 
 <img width="1484" alt="screen shot 2018-12-19 at 11 10 18 pm" src="https://user-images.githubusercontent.com/41134618/50263360-53ce4f80-03e3-11e9-89d9-36e165c2e058.png">
