@@ -60,7 +60,6 @@ class MapContainer extends Component {
                 isPlacesActive: true,
                 position: current_center,
                 userId: userId,
-                mapObject: mapsCustom
             });
         });
     }

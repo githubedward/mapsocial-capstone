@@ -13,22 +13,12 @@ import LandingPage from './components/LandingPage';
 const baseURL = 'http://localhost:8080';
 const serverKey = `?api_key=${server_key}`;
 const userId = '5c095088f174490551984d6b'; /* ed */
-// const userId = '5c112309a921ba02a92ef575'; /* kajen */
-// const userId = '5c0ffdd5a84b88067d54a527'; /* paulo */
-// const userId = "5c0f42993f8b9709a82ac94e"; /* robin */
-// const userId = '5c0ffec361735006bb43fbc9'; /* meera */
-// const userId = "5c0fec38818ef403fdf94233"; /* landon */
-// const userId = '5c0a0c9429f51d0c0f05f026'; /* ericka */
-// const userId = "5c0efc9dc64b8b0410a7aa00"; /* david */
-// const userId = "5c0f414b4b0c4f099056932e"; /* scott */
-
 
 const userUrl = `${baseURL}/${userId}${serverKey}`;
 
 class App extends Component {
     state = {
         userInfo: {},
-        places: [],
         otherPlaces: [],
         contents: []
     }
@@ -91,12 +81,12 @@ class App extends Component {
                     <Route path='/map/profile' exact render={(props) =>
                         <Profile {...props} userInfo={this.state.userInfo} onUpdateApp={this.onUpdateApp} />}>
                     </Route>
-                    <Route path='/map' render={(props) => {
-                        return <div>
-                                <Navside {...props} avatar={this.state.userInfo.avatar} />
-                                <Map {...props} userInfo={this.state.userInfo} onUpdateApp={this.onUpdateApp} otherPlaces={this.state.otherPlaces} />
-                            </div>
-                        }}>
+                    <Route path='/map' render={(props) => 
+                        <div>
+                            <Navside {...props} avatar={this.state.userInfo.avatar} />
+                            <Map {...props} userInfo={this.state.userInfo} onUpdateApp={this.onUpdateApp} otherPlaces={this.state.otherPlaces} />
+                        </div>
+                        }>
                     </Route>   
                 </div>
             </Router>
