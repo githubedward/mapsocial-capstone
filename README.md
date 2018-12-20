@@ -10,19 +10,19 @@
 - MongoDB / mLabs for database
 
 # Project Overview
-## Landing page
+### Landing page
 
 <img width="1474" alt="screen shot 2018-12-19 at 9 33 23 pm" src="https://user-images.githubusercontent.com/41134618/50260784-84a88780-03d7-11e9-982f-88f8884a95cb.png">
 
-## My Map / Places 
+### My Map / Places 
 
 <img width="1484" alt="screen shot 2018-12-19 at 9 48 43 pm" src="https://user-images.githubusercontent.com/41134618/50260867-e36e0100-03d7-11e9-92f8-e3e1a016d007.png">
 
-## Pin a New Place
+### Pin a New Place
 
 <img width="1485" alt="screen shot 2018-12-19 at 10 18 46 pm" src="https://user-images.githubusercontent.com/41134618/50262213-026f9180-03de-11e9-94a7-780c216ff7aa.png">
 <img width="1482" alt="screen shot 2018-12-19 at 10 18 56 pm" src="https://user-images.githubusercontent.com/41134618/50262228-12877100-03de-11e9-9e17-0874c1c0ee8b.png">
 
-## Write something about a specific pinned place
+### Write something about a specific pinned place
 
 <img width="1484" alt="screen shot 2018-12-19 at 10 19 45 pm" src="https://user-images.githubusercontent.com/41134618/50262234-15826180-03de-11e9-8b36-1de3837b8f8c.png">
