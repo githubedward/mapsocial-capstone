@@ -4,8 +4,8 @@
 - The whole app presented in this repo was completed in 2 weeks time including design and planning
 
 # Tech Stack
-- Google Maps API       -> maps interface, autocomplete service, marker, infowindow
-- ReactJS and ScSS/SaSS -> front-end
-- Node Express          -> server
-- MongoDB / mLabs       -> database
+- Google Maps API         -> maps interface, autocomplete service, marker, infowindow
+- ReactJS and ScSS/SaSS   -> front-end
+- Node Express            -> server
+- MongoDB / mLabs         -> database
 
