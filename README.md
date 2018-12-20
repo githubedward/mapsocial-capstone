@@ -31,6 +31,7 @@
 
 <img width="1480" alt="screen shot 2018-12-19 at 11 09 40 pm" src="https://user-images.githubusercontent.com/41134618/50263353-4fa23200-03e3-11e9-8131-a194899a9910.png">
 
+- Hide my markers
 <img width="1482" alt="screen shot 2018-12-19 at 11 09 54 pm" src="https://user-images.githubusercontent.com/41134618/50263356-52048c00-03e3-11e9-81d5-778d5cc6d419.png">
 
 ### Feed 
