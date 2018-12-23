@@ -23,7 +23,7 @@ To pin a new place, type address or name of place in the Google Autocomplete sea
 
 <img width="1485" alt="screen shot 2018-12-19 at 10 18 46 pm" src="https://user-images.githubusercontent.com/41134618/50262213-026f9180-03de-11e9-94a7-780c216ff7aa.png">
 
-When user click 'Pin it!', client will pin it on the map UI and send Post request to my server and it will save all the details, which will be tied to the user's ID, on my database. 
+When the user clicks 'Pin it!', client will pin it on the map UI and will send Post request to my server and it will save all the details, which will take the user's ID as its foreign ID, on my MongoDB database. 
 
 <img width="1482" alt="screen shot 2018-12-19 at 10 18 56 pm" src="https://user-images.githubusercontent.com/41134618/50262228-12877100-03de-11e9-9e17-0874c1c0ee8b.png">
 
