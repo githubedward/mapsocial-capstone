@@ -9,7 +9,7 @@
 - Node Express for server
 - MongoDB / mLabs for database
 
-# Project Overview
+# Project Features
 
 Link to demo: https://mapsocial-capstone.herokuapp.com
 
