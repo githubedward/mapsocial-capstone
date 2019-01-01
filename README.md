@@ -6,7 +6,7 @@
 # Tech Stack
 - Google Maps API for maps interface and autocomplete service
 - ReactJS and ScSS/SaSS for front-end
-- Node Express for server
+- Node Express for cors-enabled server
 - MongoDB / mLabs for database
 
 # Project Features
