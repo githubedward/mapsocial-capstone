@@ -13,7 +13,7 @@
 
 Link to demo: https://mapsocial-capstone.herokuapp.com
 
-Note: the app is deployed for demonstration purposes only. The app has still some minor issues on heroku routing when user refreshes the page - when encountered, please enter the original url as indicated above.
+Note: the app is deployed for demonstration purposes only. The app has still some minor issues on heroku routing when user refreshes the page - when issue is encountered, please enter go to the original url as indicated above.
 
 ### Landing page
 
