@@ -1,17 +1,18 @@
 # Project Background
 - MapSocial is a collaborative platform where users can record, share and find new experiences on a digital map
 - Developed as part of the Capstone Project at Brainstation
-- The whole app presented in this repo was developed in 11 days - including design, planning and development
+- The whole app presented in this repo was developed in 11 days - including planning and design
 
 # Tech Stack
-- Google Maps API for maps interface, autocomplete service, marker, infowindow
+- Google Maps API for maps interface and autocomplete service
 - ReactJS and ScSS/SaSS for front-end
 - Node Express for server
 - MongoDB / mLabs for database
 
 # Project Overview
 
-Link to Demo: https://mapsocial-capstone.herokuapp.com
+Link to demo: https://mapsocial-capstone.herokuapp.com
+Note: the app is deployed for demonstration purposes only. The app has still some minor issues on heroku routing when user refreshes the page - when encountered, please enter the original url as indicated above.
 
 ### Landing page
 
