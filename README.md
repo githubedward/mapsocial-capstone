@@ -1,5 +1,5 @@
 # Project Background
-- The app presented in this repo was developed in 11 days - including planning and design
+- The app presented in this repo was developed in 11 days - including basic UX/UI design and planning
 - MapSocial is a collaborative platform where users can record, share and find new experiences on a digital map
 - Developed as part of the Capstone Project at Brainstation
 
