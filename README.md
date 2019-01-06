@@ -11,9 +11,7 @@
 
 # Project Features
 
-Link to demo: https://mapsocial-capstone.herokuapp.com
-
-Note: the app is deployed for demonstration purposes only. The app has still a minor routing issue when user refreshes the page - when issue is encountered, please go to the original url as indicated above.
+Link to demo: https://mapsocial-demo.herokuapp.com
 
 ### Landing page
 
