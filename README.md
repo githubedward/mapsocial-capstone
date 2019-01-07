@@ -5,7 +5,7 @@
 
 # Tech Stack
 - Google Maps API for maps interface and autocomplete service
-- MERN stack
+- MERN stack (MongoDB, ExpressJS, ReactJS, Node)
 - SaSS/ScSS for UI styling + BEM naming convention
 
 # Project Features
