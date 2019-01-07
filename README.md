@@ -1,12 +1,12 @@
 # Project Background
-- The app presented in this repo was developed in 11 days - including basic UX/UI design and planning
+- The app presented in this repo was developed in 11 days - including basic UX/UI design
 - MapSocial is a collaborative platform where users can record, share and find new experiences on a digital map
 - Developed as part of the Capstone Project at BrainStation
 
 # Tech Stack
 - Google Maps API for maps interface and autocomplete service
 - ReactJS and ScSS/SaSS for front-end
-- Node Express for cors-enabled server
+- Node Express for cors-enabled back-end API
 - MongoDB / mLabs for database
 
 # Project Features
