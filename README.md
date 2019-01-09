@@ -12,7 +12,7 @@
 
 Link to demo: https://mapsocial-demo.herokuapp.com
 
-Note: The app still has some performance issue, please hit refresh or go back to opening page if data doesn't load. 
+Note: The app still has some performance issue, it takes about 3 seconds for the client to load and additional 2 seconds for my back-end server to boot. Please hit refresh or go back to opening page if data doesn't load. 
 
 ### Landing page
 
