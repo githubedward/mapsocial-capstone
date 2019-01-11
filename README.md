@@ -10,9 +10,9 @@
 
 # Project Features
 
-Link to demo: https://mapsocial-demo.herokuapp.com
+Note: The app deployed to the link below is for demo purposes only and still has some performance issue, it takes a couple of seconds for the UI to initially load. Also, please hit refresh or go back to opening page if data doesn't load. 
 
-Note: The app deployed to the above link is for demo purposes only and still has some performance issue, it takes a couple of seconds for the UI to initially load. Also, please hit refresh or go back to opening page if data doesn't load. 
+Link to demo: https://mapsocial-demo.herokuapp.com
 
 ### Landing page
 
