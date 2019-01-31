@@ -17,9 +17,6 @@ Link to demo: https://mapsocial-demo.herokuapp.com
 ### Landing page
 ![landing page](https://user-images.githubusercontent.com/41134618/52089028-87240280-257b-11e9-8589-3e15798a0bf2.gif)
 
-### Demo
-![demo1](https://user-images.githubusercontent.com/41134618/52092904-47fbae80-2587-11e9-87a9-55a3216f4931.gif)
-
 ### My Map / Places 
 - On initial page reload, user's pinned markers will drop. 
 
@@ -29,8 +26,7 @@ Link to demo: https://mapsocial-demo.herokuapp.com
 
 ### Feed 
 - Posts displayed on feed are connected to what is shown on the map
-
-![demo2](https://user-images.githubusercontent.com/41134618/52092908-49c57200-2587-11e9-8644-7c9bee3fa1c2.gif)
+![demo1](https://user-images.githubusercontent.com/41134618/52092904-47fbae80-2587-11e9-87a9-55a3216f4931.gif)
 
 ### Write something about a specific pinned place
 - Click the marker and modal will pop up where you can write something about your experience.
@@ -40,4 +36,5 @@ Link to demo: https://mapsocial-demo.herokuapp.com
 
 - When the user clicks 'Pin it!', client will pin it on the map UI and will send Post request to my server and it will save all the details, which will take the user's ID as its foreign ID, on my MongoDB database. 
 
+![demo2](https://user-images.githubusercontent.com/41134618/52092908-49c57200-2587-11e9-8644-7c9bee3fa1c2.gif)
 
