@@ -26,6 +26,7 @@ Link to demo: https://mapsocial-demo.herokuapp.com
 
 ### Feed 
 - Posts displayed on feed are connected to what is shown on the map
+
 ![demo1](https://user-images.githubusercontent.com/41134618/52092904-47fbae80-2587-11e9-87a9-55a3216f4931.gif)
 
 ### Write something about a specific pinned place
