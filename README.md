@@ -15,21 +15,22 @@ Note: The app deployed to the link below is for demo purposes only and still has
 Link to demo: https://mapsocial-demo.herokuapp.com
 
 ### Landing page
-
 ![landing page](https://user-images.githubusercontent.com/41134618/52089028-87240280-257b-11e9-8589-3e15798a0bf2.gif)
 
 ### Demo
-
-![demo](https://user-images.githubusercontent.com/41134618/52088545-2b0cae80-257a-11e9-86b7-13eb9ab49025.gif)
+![demo1](https://user-images.githubusercontent.com/41134618/52092904-47fbae80-2587-11e9-87a9-55a3216f4931.gif)
 
 ### My Map / Places 
 - On initial page reload, user's pinned markers will drop. 
 
 ### Community (Connections) Tab
 - Enable markers of some of my connections
+- Toggle markers
 
 ### Feed 
 - Posts displayed on feed are connected to what is shown on the map
+
+![demo2](https://user-images.githubusercontent.com/41134618/52092908-49c57200-2587-11e9-8644-7c9bee3fa1c2.gif)
 
 ### Write something about a specific pinned place
 - Click the marker and modal will pop up where you can write something about your experience.
