@@ -16,7 +16,7 @@ Link to demo: https://mapsocial-demo.herokuapp.com
 
 ### Landing page
 
-![landing page](https://user-images.githubusercontent.com/41134618/52088558-31028f80-257a-11e9-9415-b259086979df.gif)
+![landing page](https://user-images.githubusercontent.com/41134618/52089028-87240280-257b-11e9-8589-3e15798a0bf2.gif)
 
 ### Demo
 
