@@ -30,6 +30,7 @@ Enable markers of some of my connections
 Posts displayed on feed are connected to what is shown on the map
 
 ### Write something about a specific pinned place
+Click the marker and modal will pop up where you can write something about your experience.
 
 ### Pin a New Place
 To pin a new place, type address or name of place in the Google Autocomplete searchbar. When place is clicked, client will send request to Google Places API for the places details and it will respond with the data. 
