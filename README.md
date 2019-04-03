@@ -1,6 +1,9 @@
 # Project Background
-- The app presented in this repo was developed in 11 days - including basic UX/UI design (deployment not included)
+- The app presented in this repo is my final project for the Full Stack Dev Diploma at Brainstation.
+- It was developed in 11 days - including basic UX/UI design (deployment not included).
 - MapSocial is a collaborative platform where people can record, share and find new experiences on a digital map
+- WARNING: The code quality might not be the best. 
+
 
 # Tech Stack
 - Google Maps API for maps interface and autocomplete service
